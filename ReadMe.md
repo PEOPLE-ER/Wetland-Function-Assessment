@@ -8,4 +8,4 @@ Scope of Notebooks:
 - Measure similarity of time series using Dynamic Time Warping (DWT).
 
 Workflow
-![Alt text](/asset/workflow.jpg "Workflow")
+![Alt text](asset/workflow.jpg "Workflow")
