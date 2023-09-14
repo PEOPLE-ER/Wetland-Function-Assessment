@@ -1,17 +1,11 @@
-Notebook:
+Scope of Notebooks:
 
-    Ready to use:
-        
-        plot_sentinel-1_time_series.ipynb
+- Conduct landscape segmentation based on Sentinel-2 images
+- Plot time series maps of Sentinel-1 images with False colour
+- Aggregate time series of S1 backscatter by landscape units (from landscape segmentation)
+- Project S1 time series of landscape units into 2D space using t-SNE algorithm for visualization purpose
+- Perform cluster analysis using HDBSCAN algorithm to identify major temporal patterns from samples and generate reference time series for various wetland function types.
+- Measure similarity of time series using Dynamic Time Warping (DWT).
 
-        create_field_time_series.ipynb
-
-        cluster_analysis_tsne.ipynb
-
-        cluster_analysis_hdbscan.ipynb
-
-    Still editing
-
-        edge_detection
-
-        - calculate_dtw.ipynb
+Workflow
+![Alt text](/asset/workflow.jpg "Workflow")
