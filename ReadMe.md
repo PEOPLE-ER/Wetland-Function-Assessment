@@ -7,5 +7,5 @@
 - Perform cluster analysis using HDBSCAN algorithm to identify major temporal patterns from samples and generate reference time series for various wetland function types.
 - Measure similarity of time series using Dynamic Time Warping (DWT).
 
-# Workflow
+# Graph of Workflow
 ![Alt text](asset/workflow.png "Workflow")
