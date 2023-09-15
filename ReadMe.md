@@ -8,4 +8,4 @@
 - Measure similarity of time series using Dynamic Time Warping (DWT).
 
 # Graph of Workflow
-![Alt text](asset/workflow.png "Workflow")
+![Alt text](asset/workflow.png "Graph of Workflow")
