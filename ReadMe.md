@@ -13,8 +13,8 @@ The biological effects of irregular inundation is recognized as a high-priority 
 product, related to the “ecosystem disturbance and habitat structure” remote sensing enabled essential 
 biodiversity variables (RS-EBVs) (Skidmore et al. 2021).
 EO time series have a proven capability in the detection of surface water location and vegetation 
-inundation seasonality. Several initiatives aimed to use multi-spectral and radar time series (e.g. Joint 
-Research Centre (JRC) global surface water permanence dataset based on Landsat time series (Pekel 
+inundation seasonality. Several initiatives aimed to use multi-spectral and radar time series such as the Joint 
+Research Centre's (JRC) global surface water permanence dataset based on the Landsat time series (Pekel 
 et al. 2016) and the ESA financed WorldWater project1 provide valuable information but are limited to the 
 detection of surface water. Ecosystem restoration practitioners require tools to assess complex wetland ecosystems. 
 However, challenges include working with large volumes of EO data, handling EO data time series, the complexity of
@@ -39,10 +39,10 @@ on a variety of platforms.
 This workflow will be split into 5 notebooks that will guide you through the tutorial:
 
 - 01_inspect_S1_time_series.ipynb
-- 02_conduct_landscape_segmentation.ipynb
+- 02_landscape_segmentation.ipynb
 - 03_compile_time_series.ipynb
 - 04_cluster_analysis.ipynb
-- 05_classify_time_series.ipynb
+- 05_calculate_dtw.ipynb
 
 Each one of these notebooks will touch on key steps of the PEOPLE-ER workflow to Assess Wetland Function in natural to heavily modified wetland ecosystems.
 
