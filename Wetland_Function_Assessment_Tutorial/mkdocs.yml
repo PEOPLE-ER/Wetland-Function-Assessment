@@ -2,16 +2,18 @@ site_name: PEOPLE-ER Wetland Function Assessment
 site_url: https://www.people-er.info/documentation/Wetland_Function_Assessment/
 
 nav:
-- Home: ReadMe.md
-- Notebook pages: 
-    - '01_inspect_S1_time_series.ipynb'
-    - '02_landscape_segmentation.ipynb'
-    - '03_compile_time_series.ipynb'
-    - '04_cluster_analysis.ipynb'
-    - '05_calculate_dtw.ipynb'
+- Home: index.md
+- Tutorial Notebooks: 
+    - 01_inspect_S1_time_series.ipynb: '01_inspect_S1_time_series.ipynb'
+    - 02_landscape_segmentation.ipynb: '02_landscape_segmentation.ipynb'
+    - 03_compile_time_series.ipynb: '03_compile_time_series.ipynb'
+    - 04_cluster_analysis.ipynb: '04_cluster_analysis.ipynb'
+    - 05_calculate_dtw.ipynb: '05_calculate_dtw.ipynb'
 
 plugins:
   - mkdocs-jupyter:
       include_source: True
 
-theme: readthedocs
+markdown_extensions:
+  - attr_list
+theme: gitbook
