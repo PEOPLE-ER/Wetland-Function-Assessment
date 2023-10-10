@@ -2,7 +2,7 @@
 
 ![image](asset/pEOple_KV-Ecosystem_Restorarion.jpg){align=center}
 
-## Problem Statement:
+## Problem Statement
 
 For wetland ecosystems, the location and persistence of surface water (inland and coastal) is a key driver
 of biological diversity and ecosystems services. Restoring of natural wetland inundation function is often
@@ -24,7 +24,7 @@ wetland structure, and methods to assess wetland restoration, i.e., using refere
 Another factor is the inter-annual variability of climate and short to long-term responses of wetlands to restoration processes
 and climate variability.
 
-## Tutorial Objective:
+## Tutorial Objective
 
 The objective of the PEOPLE-ER Wetland and Wetness Trends tutorial is to provide and demonstrate a flexible, and powerful
 set of EO data analytics tools to support wetland ER assessment. The tutorial demonstrates methods for high-resolution
@@ -36,7 +36,7 @@ With recent innovation in cloud computing and the availability of long-term Synt
 tools in such a way that it is not tied to a singular EO exploitation platform, but instead can be used
 on a variety of platforms.
 
-## Tutorial Workflow:
+## Tutorial Workflow
 
 This workflow will be split into 5 notebooks that will guide you through the tutorial:
 
@@ -56,7 +56,6 @@ Each one of these notebooks will touch on key steps of the PEOPLE-ER workflow to
 The area used for the demonstration of this workflow is the An-Giang province of Vietnam, a highly modified wetland landscape, that has recently seen efforts to restore natural flood dynamics.
 
 ## Acknowledgements
-
 
 This tutorial was developed within the Pioneer Earth Observation apPlications for the Environment Ecosystem
 Restoration (PEOPLE-ER) project financed by the European Space Agency (ESA). Members of the PEOPLE-ER consortium include:
