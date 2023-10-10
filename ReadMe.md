@@ -52,3 +52,23 @@ Each one of these notebooks will touch on key steps of the PEOPLE-ER workflow to
 ## Demonstration Area
 
 The area used for the demonstration of this workflow is the An-Giang province of Vietnam, a highly modified wetland landscape, that has recently seen efforts to restore natural flood dynamics.
+
+## Acknowledgements
+
+
+This tutorial was developed within the Pioneer Earth Observation apPlications for the Environment Ecosystem 
+Restoration (PEOPLE-ER) project financed by the European Space Agency (ESA). Members of the PEOPLE-ER consortium include:
+
+![image](asset/ESA_logo_2020_Deep_25per.png)
+
+
+![image](asset/Hatfield_Logo_Hor_Blue_RGB_rescaled.png)
+
+
+![image](asset/ubc-logo-2018-fullsig-blue-rgb300_rescaled3.png)
+
+
+![image](asset/VTT_Orange_Logo_150per.png)
+
+
+![image](asset/INCDS_logo_150per.jpg)
