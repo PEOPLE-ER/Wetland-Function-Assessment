@@ -16,4 +16,4 @@ plugins:
 
 markdown_extensions:
   - attr_list
-theme: gitbook
+theme: flatly
