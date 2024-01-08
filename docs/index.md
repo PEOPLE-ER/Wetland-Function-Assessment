@@ -72,7 +72,7 @@ Restoration (PEOPLE-ER) project financed by the European Space Agency (ESA). Mem
 
 ## How to Cite
 
-When using this tool in your work we ask that you please cite the Spectral_Recovery tool as follows:
+When using this tool in your work we ask that you please cite the Wetland Function Assessment tool as follows:
 
 "The Wetland Function Assessment Tutorial was developed in the PEOPLE-ER Project, managed by Hatfield Consultants, and financed by the European Space Agency."
 

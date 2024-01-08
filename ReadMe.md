@@ -1,5 +1,12 @@
 # Wetland Function Assessment Tutorial
 
+## Links:
+
+Github: [https://github.com/PEOPLE-ER/Wetland-Function-Assessment/](https://github.com/PEOPLE-ER/Wetland-Function-Assessment)
+
+Documentation: [https://people-er.github.io/Wetland-Function-Assessment/](https://people-er.github.io/Wetland-Function-Assessment/)
+
+
 ## Problem Statement:
 
 For wetland ecosystems, the location and persistence of surface water (inland and coastal) is a key driver 
