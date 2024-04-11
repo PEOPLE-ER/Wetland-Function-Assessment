@@ -1,4 +1,4 @@
-# Welcome to the PEOPLE-ER Wetland Function Assessment Tutorial!
+# Welcome to the PEOPLE-ER SWIFT-C Tutorial!
 
 ![image](asset/pEOple_KV-Ecosystem_Restorarion.jpg){align=center}
 
@@ -26,7 +26,7 @@ and climate variability.
 
 ## Tutorial Objective
 
-The objective of the PEOPLE-ER Wetland and Wetness Trends tutorial is to provide and demonstrate a flexible, and powerful
+The objective of the PEOPLE-ER SWIFT-C tutorial is to provide and demonstrate a flexible, and powerful
 set of EO data analytics tools to support wetland ER assessment. The tutorial demonstrates methods for high-resolution
 satellite EO data time series analysis to enable the monitoring and comparison of surface water
 dynamics and wetness trends in natural to heavily modified wetland ecosystems.
@@ -46,7 +46,7 @@ This workflow will be split into 5 notebooks that will guide you through the tut
 - 4) Clustering and Reference Extraction
 - 5) Comparing similarities between Time Series
 
-Each one of these notebooks will touch on key steps of the PEOPLE-ER workflow to Assess Wetland Function in natural to heavily modified wetland ecosystems.
+Each one of these notebooks will touch on key steps of the PEOPLE-ER SWIFT-C workflow to assess wetland function in natural to heavily modified wetland ecosystems.
 
 ## Workflow Diagram
 ![Alt text](asset/workflow.png "Graph of Workflow")
@@ -72,9 +72,9 @@ Restoration (PEOPLE-ER) project financed by the European Space Agency (ESA). Mem
 
 ## How to Cite
 
-When using this tool in your work we ask that you please cite the Wetland Function Assessment tool as follows:
+When using this tool in your work we ask that you please cite the SWIFT-C tool as follows:
 
-"The Wetland Function Assessment Tutorial was developed in the PEOPLE-ER Project, managed by Hatfield Consultants, and financed by the European Space Agency."
+"The SWIFT-C tool was developed under the PEOPLE-ER Project, managed by Hatfield Consultants, and financed by the European Space Agency."
 
 ## License
 

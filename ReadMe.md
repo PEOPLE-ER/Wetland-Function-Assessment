@@ -51,7 +51,7 @@ This workflow will be split into 5 notebooks that will guide you through the tut
 - 04_cluster_analysis.ipynb
 - 05_calculate_dtw.ipynb
 
-Each one of these notebooks will touch on key steps of the PEOPLE-ER SWIFT-C workflow is to assess wetland function in natural to heavily modified wetland ecosystems.
+Each one of these notebooks will touch on key steps of the PEOPLE-ER SWIFT-C workflow to assess wetland function in natural to heavily modified wetland ecosystems.
 
 ## Workflow Diagram
 ![Alt text](asset/workflow.png "Graph of Workflow")
