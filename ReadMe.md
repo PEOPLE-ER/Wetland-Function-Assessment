@@ -1,4 +1,4 @@
-# Wetland Function Assessment Tutorial
+# SWIFT-C: Satellite Wetland Inundation Flood Time-series Clustering
 
 ## Links:
 
@@ -31,7 +31,7 @@ and climate variability.
 
 ## Tutorial Objective:
 
-The objective of the PEOPLE-ER Wetland and Wetness Trends tutorial is to provide and demonstrate a flexible, and powerful 
+The objective of the PEOPLE-ER SWIFT-C tutorial is to provide and demonstrate a flexible, and powerful 
 set of EO data analytics tools to support wetland ER assessment. The tutorial demonstrates methods for high-resolution
 satellite EO data time series analysis to enable the monitoring and comparison of surface water 
 dynamics and wetness trends in natural to heavily modified wetland ecosystems.
@@ -51,7 +51,7 @@ This workflow will be split into 5 notebooks that will guide you through the tut
 - 04_cluster_analysis.ipynb
 - 05_calculate_dtw.ipynb
 
-Each one of these notebooks will touch on key steps of the PEOPLE-ER workflow to Assess Wetland Function in natural to heavily modified wetland ecosystems.
+Each one of these notebooks will touch on key steps of the PEOPLE-ER SWIFT-C workflow is to assess wetland function in natural to heavily modified wetland ecosystems.
 
 ## Workflow Diagram
 ![Alt text](asset/workflow.png "Graph of Workflow")
@@ -82,9 +82,9 @@ Restoration (PEOPLE-ER) project financed by the European Space Agency (ESA). Mem
 
 ## How to Cite
 
-When using this tool in your work we ask that you please cite the Wetland Function Assessment Tutorial as follows:
+When using this tool in your work we ask that you please cite the SWIFT-C Tutorial as follows:
 
-"The Wetland Function Assessment Tutorial was developed in the PEOPLE-ER Project, managed by Hatfield Consultants, and financed by the European Space Agency."
+"The SWIFT-C Tutorial was developed in the PEOPLE-ER Project, managed by Hatfield Consultants, and financed by the European Space Agency."
 
 ## License
 
