@@ -1,0 +1,654 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.people-er.github.io/Wetland_Function_Assessment/">
+      
+      
+      
+        <link rel="next" href="01_inspect_S1_time_series/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>PEOPLE-ER SWIFT-C</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#welcome-to-the-people-er-swift-c-tutorial" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="PEOPLE-ER SWIFT-C" class="md-header__button md-logo" aria-label="PEOPLE-ER SWIFT-C" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PEOPLE-ER SWIFT-C
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="PEOPLE-ER SWIFT-C" class="md-nav__button md-logo" aria-label="PEOPLE-ER SWIFT-C" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    PEOPLE-ER SWIFT-C
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Statement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tutorial Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tutorial Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demonstration-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demonstration Area
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acknowledgements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-cite" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Cite
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorial Notebooks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorial Notebooks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01_inspect_S1_time_series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inspect S1 Time-Series for Area of Interest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02_landscape_segmentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Segment Landscape based on S2 composites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03_compile_time_series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compile Time Series by Units of Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04_cluster_analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custering and Reference Extraction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="05_calculate_dtw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comparing similarities between Time Series
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Statement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tutorial Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tutorial Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demonstration-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demonstration Area
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acknowledgements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-cite" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Cite
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="welcome-to-the-people-er-swift-c-tutorial">Welcome to the PEOPLE-ER SWIFT-C Tutorial!</h1>
+<p><img align="center" alt="image" src="asset/pEOple_KV-Ecosystem_Restorarion.jpg" /></p>
+<h2 id="problem-statement">Problem Statement</h2>
+<p>For wetland ecosystems, the location and persistence of surface water (inland and coastal) is a key driver
+of biological diversity and ecosystems services. Restoring of natural wetland inundation function is often
+an important feature of wetland restoration because the hydrological regime drives the nutrient fluxes,
+water quality, and habitat suitability for plant and animal species and other biodiversity. For example,
+enabling reconnection of wetlands within a floodplain and restoring wetland inundation functions can
+be a key indicator of wetland restoration.</p>
+<p>The biological effects of irregular inundation is recognized as a high-priority remote sensing biodiversity
+product, related to the “ecosystem disturbance and habitat structure” remote sensing enabled essential
+biodiversity variables (RS-EBVs) (Skidmore et al. 2021).
+EO time series have a proven capability in the detection of surface water location and vegetation
+inundation seasonality. Several initiatives aimed to use multi-spectral and radar time series such as the Joint
+Research Centre's (JRC) global surface water permanence dataset based on the Landsat time series (Pekel
+et al. 2016) and the ESA financed WorldWater project1 provide valuable information but are limited to the
+detection of surface water. Ecosystem restoration practitioners require tools to assess complex wetland ecosystems.
+However, challenges include working with large volumes of EO data, handling EO data time series, the complexity of
+wetland structure, and methods to assess wetland restoration, i.e., using reference sites or reference time periods.
+Another factor is the inter-annual variability of climate and short to long-term responses of wetlands to restoration processes
+and climate variability.</p>
+<h2 id="tutorial-objective">Tutorial Objective</h2>
+<p>The objective of the PEOPLE-ER SWIFT-C tutorial is to provide and demonstrate a flexible, and powerful
+set of EO data analytics tools to support wetland ER assessment. The tutorial demonstrates methods for high-resolution
+satellite EO data time series analysis to enable the monitoring and comparison of surface water
+dynamics and wetness trends in natural to heavily modified wetland ecosystems.</p>
+<p>With recent innovation in cloud computing and the availability of long-term Synthetic Aperture Radar
+(SAR) EO datasets at high temporal and spatial resolution, the technical objective is to develop analysis
+tools in such a way that it is not tied to a singular EO exploitation platform, but instead can be used
+on a variety of platforms.</p>
+<h2 id="tutorial-workflow">Tutorial Workflow</h2>
+<p>This workflow will be split into 5 notebooks that will guide you through the tutorial:</p>
+<ul>
+<li>1) Inspect S1 Time-Series for an Area of Interest</li>
+<li>2) Segment Landscape based on S2 Composites</li>
+<li>3) Compile Time Series by Units of Analysis</li>
+<li>4) Clustering and Reference Extraction</li>
+<li>5) Comparing similarities between Time Series</li>
+</ul>
+<p>Each one of these notebooks will touch on key steps of the PEOPLE-ER SWIFT-C workflow to assess wetland function in natural to heavily modified wetland ecosystems.</p>
+<h2 id="workflow-diagram">Workflow Diagram</h2>
+<p><img alt="Alt text" src="asset/workflow.png" title="Graph of Workflow" /></p>
+<h2 id="demonstration-area">Demonstration Area</h2>
+<p>The area used for the demonstration of this workflow is the An-Giang province of Vietnam, a highly modified wetland landscape, that has recently seen efforts to restore natural flood dynamics.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This tutorial was developed within the Pioneer Earth Observation apPlications for the Environment Ecosystem
+Restoration (PEOPLE-ER) project financed by the European Space Agency (ESA). Members of the PEOPLE-ER consortium include:</p>
+<p><img align="center" alt="image" src="asset/ESA_logo_2020_Deep_25per.png" /></p>
+<p><img align="center" alt="image" src="asset/Hatfield_Logo_Hor_Blue_RGB_rescaled.png" /></p>
+<p><img align="center" alt="image" src="asset/ubc-logo-2018-fullsig-blue-rgb300_rescaled3.png" /></p>
+<p><img align="center" alt="image" src="asset/VTT_Orange_Logo_150per.png" /></p>
+<p><img align="center" alt="image" src="asset/INCDS_logo_150per.jpg" /></p>
+<h2 id="how-to-cite">How to Cite</h2>
+<p>When using this tool in your work we ask that you please cite the SWIFT-C tool as follows:</p>
+<p>"The SWIFT-C tool was developed under the PEOPLE-ER Project, managed by Hatfield Consultants, and financed by the European Space Agency."</p>
+<h2 id="license">License</h2>
+<p><a href="httpps://www.people-er.github.io/Wetland_Function_Assessment">Wetland Function Assessment Tutorial</a> © 2023 by <a href="people-er.info">PEOPLE-ER Project</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1">Attribution-ShareAlike 4.0 International</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

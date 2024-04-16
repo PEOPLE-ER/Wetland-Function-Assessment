@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://www.people-er.github.io/Wetland_Function_Assessment/</loc>
+         <lastmod>2024-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.people-er.github.io/Wetland_Function_Assessment/01_inspect_S1_time_series/</loc>
+         <lastmod>2024-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.people-er.github.io/Wetland_Function_Assessment/02_landscape_segmentation/</loc>
+         <lastmod>2024-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.people-er.github.io/Wetland_Function_Assessment/03_compile_time_series/</loc>
+         <lastmod>2024-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.people-er.github.io/Wetland_Function_Assessment/04_cluster_analysis/</loc>
+         <lastmod>2024-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.people-er.github.io/Wetland_Function_Assessment/05_calculate_dtw/</loc>
+         <lastmod>2024-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
