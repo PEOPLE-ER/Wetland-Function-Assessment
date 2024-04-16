@@ -16,4 +16,7 @@ plugins:
 
 markdown_extensions:
   - attr_list
-theme: flatly
+theme: material
+
+extra_css:
+  - stylesheets/extra.css
